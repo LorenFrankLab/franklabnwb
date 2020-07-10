@@ -38,9 +38,10 @@ information on the animal metadata file
 
 
 Animal metadata file:
-	rec_to_nwb requires a metadata file for each day of recording. Details on the content of that file can
-	be found at https://novelaneuro.github.io/rec_to_nwb-docs/README.html#how-to-use-it
 
-	Alternatively, you can start with the franklabnwb/yaml/beans20190718_metadata.yml file as an example
+rec_to_nwb requires a metadata file for each day of recording. Details on the content of that file can
+be found at https://novelaneuro.github.io/rec_to_nwb-docs/README.html#how-to-use-it
+
+Alternatively, you can start with the franklabnwb/yaml/beans20190718_metadata.yml file as an example
 
 
