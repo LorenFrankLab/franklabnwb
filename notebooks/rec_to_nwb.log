@@ -1,0 +1,19 @@
+2020-07-09 18:40:27,794 rec_to_nwb.processing.builder.raw_to_nwb_builder: INFO Extraction parameters :
+data_path = /Users/loren/data/nwb_builder_test_data/
+animal_name = beans
+parallel_instances = 4
+extract_analog = True
+extract_dio = True
+extract_time = True
+extract_mda = True
+extract_lfps = False
+extract_spikes = False
+overwrite = False
+lfp_export_args = ('-highpass', '0', '-lowpass', '400', '-interp', '0', '-userefs', '0', '-outputrate', '1500')
+mda_export_args = ('-usespikefilters', '0', '-interp', '0', '-userefs', '0')
+trodes_rec_export_args = ('-reconfig', '/Users/loren/data/nwb_builder_test_data/beans/Probe_128ch_allnT_DIOs_PTP_reconfig_export_shanks.xml')
+
+2020-07-09 18:40:27,951 rec_to_binaries.core: INFO Extracting analog data...
+2020-07-09 18:40:27,956 rec_to_binaries.core: INFO Extracting DIO...
+2020-07-09 18:40:27,957 rec_to_binaries.core: INFO Extracting mda...
+2020-07-09 18:40:27,959 rec_to_binaries.core: INFO Extracting time...
