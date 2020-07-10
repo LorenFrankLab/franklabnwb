@@ -3,7 +3,7 @@
 Example notebook and related code to create NWB files from ,rec and associated files assuing franklab
 compatible naming system
 
-##Instructions for initial setup and testing: 
+## Instructions for initial setup and testing: 
 
 1. Clone this repository to your home directory:
 
@@ -37,7 +37,7 @@ directory to path.
 information on the animal metadata file
 
 
-##Animal metadata file:
+## Animal metadata file:
 
 rec_to_nwb requires a metadata file for each day of recording. Details on the content of that file can
 be found at https://novelaneuro.github.io/rec_to_nwb-docs/README.html#how-to-use-it
