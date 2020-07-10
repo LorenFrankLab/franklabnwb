@@ -1,6 +1,6 @@
 # franklabnwb
 
-Example notebook and related code to create NWB files from ,rec and associated files assuing franklab
+Example notebook and related code to create NWB files from trodes .rec and associated files assuming franklab
 compatible naming system
 
 ## Instructions for initial setup and testing: 
