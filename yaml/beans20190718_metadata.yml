@@ -13,8 +13,7 @@ subject:
   weight:          Unknown
 
 data acq device:
-  - name: SpikeGadgets
-    system: SpikeGadgets
+  - system: SpikeGadgets
     amplifier: Intan  
     adc_circuit: Intan
 
@@ -24,6 +23,9 @@ associated_files:
     path: /Users/loren/data/nwb_builder_test_data/beans/a
     task_epochs: 1
 
+device:
+  name:
+    - Trodes
 
 units:
   analog: 'unspecified'
@@ -41,9 +43,9 @@ cameras:
     camera_name: beans sleep camera
   - id: 1
     meters_per_pixel: 0.002
-    manufacturer: unknown
-    model: unknown
-    lens: unknown
+    manufacturer: unknown2
+    model: unknown2
+    lens: unknown2
     camera_name: beans run camera 
 
 
