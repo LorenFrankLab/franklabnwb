@@ -14,7 +14,8 @@ directory to path.
 
 3. Strongly suggested: create and activate a new conda environment:
 
-	conda create --name rec_to_nwb python=3.7
+	conda create --name rec_to_nwb python=3.6
+	
 	conda activate rec_to_nwb
 
 4. Install the required packages for the conversion
