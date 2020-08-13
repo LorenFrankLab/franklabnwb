@@ -13,16 +13,19 @@ subject:
   weight:          Unknown
 
 data acq device:
-  - name: SpikeGadgets
-    system: MCU
-    amplifier: intan  
-    adc_circuit: intan
+  - system: SpikeGadgets
+    amplifier: Intan  
+    adc_circuit: Intan
 
 associated_files:
- -  name: test associated file
+ -  name: associated file
     description: test description 1
     path: /Users/loren/data/nwb_builder_test_data/beans/a
+    task_epochs: 1
 
+device:
+  name:
+    - Trodes
 
 units:
   analog: 'unspecified'
@@ -30,22 +33,33 @@ units:
 
 times_period_multiplier: 1.5
 
+
 cameras:
   - id: 0
     meters_per_pixel: 0.00055
+    manufacturer: unknown
+    model: unknown
+    lens: unknown
+    camera_name: beans sleep camera
   - id: 1
     meters_per_pixel: 0.002
+    manufacturer: unknown2
+    model: unknown2
+    lens: unknown2
+    camera_name: beans run camera 
+
+
 
 tasks:
-  - task_name:          Sleep,
-    task_description:   The animal sleeps in a small empty box.
+  - task_name:          Sleep
+    task_description:   The animal sleeps in a small empty box
     camera_id:
       - 0
     task_epochs:
       - 1
       - 3
-  - task_name:            Stem+Leaf,
-    task_description:     Spatial Bandit,
+  - task_name:            Stem+Leaf
+    task_description:     Spatial Bandit
     camera_id:
       - 1
     task_epochs:
@@ -56,12 +70,16 @@ tasks:
 associated_video_files:
   - name: 20190718_beans_01_s1.1.h264
     camera_id : 0
+    task_epoch: 1
   - name: 20190718_beans_02_r1.1.h264
     camera_id : 1
+    task_epoch: 2
   - name: 20190718_beans_03_s2.1.h264
     camera_id : 0
+    task_epoch: 3
   - name: 20190718_beans_04_r2.1.h264
     camera_id : 1
+    task_epoch: 4
 
 
 
@@ -104,18 +122,13 @@ behavioral_events:
     name: Pump5
   - description: Dout12
     name: Pump6
-    
-device:
-  name:
-    - Trodes
-
 
 electrode groups:
   - id: 0
     location: mPFC
     device_type: 128c-4s8mm6cm-20um-40um-sl
     description: 'Probe 1'
-    targeted_location: 'Sample predicted location'
+    targeted_location: 'mPFC'
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
@@ -124,7 +137,7 @@ electrode groups:
     location: mPFC
     device_type: 128c-4s8mm6cm-20um-40um-sl
     description: 'Probe 2'
-    targeted_location: 'Sample predicted location'
+    targeted_location: 'mPFC'
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
