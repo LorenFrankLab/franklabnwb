@@ -1,4 +1,4 @@
-probe_type: 64c-4s6mm6cm-20um-40um-sl
+probe_type: 64c-4s6mm6cm-20um-40um-dl
 units: 'um'
 probe_description: '64 channel polyimide probe'
 num_shanks: 4
