@@ -12,6 +12,10 @@ subject:
   subject id:      Despereaux
   weight:          Unknown
 
+data acq device:
+  - system: SpikeGadgets
+    amplifier: Intan  
+    adc_circuit: Intan
 
 associated_files:
  - name: Statescript1
@@ -24,7 +28,9 @@ associated_files:
    description: Statescript log r3
    path: /stelmo/loren/despereaux/raw/20191125/20191125_despereaux_06_r3.stateScriptLog
 
-meters_per_pixel: 0.02
+device:
+  name:
+    - Trodes
 
 units:
   analog: 'unspecified'
@@ -32,17 +38,19 @@ units:
 
 times_period_multiplier: 1.5
 
-data acq device:
-  - name: trodes
-    system: trodes MCU
-    amplifier: Intan
-    adc_circuit: Intan
-
 cameras:
   - id: 0
-    meters_per_pixel: 0.0055
+    meters_per_pixel: 0.00055
+    manufacturer: unknown
+    model: unknown
+    lens: unknown
+    camera_name: beans sleep camera
   - id: 1
     meters_per_pixel: 0.002
+    manufacturer: unknown2
+    model: unknown2
+    lens: unknown2
+    camera_name: beans run camera 
 
 tasks:
   - task_name:          Sleep
@@ -139,9 +147,6 @@ behavioral_events:
   - description: Din31
     name: camsync_sleep
     
-device:
-  name:
-    - Trodes
 
 electrode groups:
   - id: 0
