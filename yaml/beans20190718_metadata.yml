@@ -21,7 +21,8 @@ associated_files:
  -  name: associated file
     description: test description 1
     path: /Users/loren/data/nwb_builder_test_data/beans/a
-    task_epochs: 1
+    task_epochs: 
+      - 1
 
 device:
   name:
@@ -32,7 +33,8 @@ units:
   behavioral_events: 'unspecified'
 
 times_period_multiplier: 1.5
-
+# A/D units to volts: 0.195 uV / lsb 
+conversion : 0.000000195 
 
 cameras:
   - id: 0

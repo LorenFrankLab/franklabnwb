@@ -60,8 +60,8 @@ def main():
                           overwrite=overwrite,
                           output_path=output_path,
                           video_path=video_path,
-                          extract_analog=True)
-#                         trodes_rec_export_args = trodes_rec_export_args)
+                          extract_analog=True,
+                        trodes_rec_export_args = trodes_rec_export_args)
 
     print('Building and Writing', flush=True)
     builder.build_nwb(process_mda_valid_time='False',

@@ -17,6 +17,9 @@ data acq device:
     amplifier: Intan  
     adc_circuit: Intan
 
+# A/D units to volts: 0.195 uV / lsb 
+conversion = 0.000000195 
+
 associated_files:
  - name: Statescript1
    description: Statescript log r1
