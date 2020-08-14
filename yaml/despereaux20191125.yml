@@ -24,13 +24,19 @@ associated_files:
  - name: Statescript1
    description: Statescript log r1
    path: /stelmo/loren/despereaux/raw/20191125/20191125_despereaux_02_r1.stateScriptLog
+   task_epochs:
+    - 2
  - name: Statescript2
    description: Statescript log r2
    path: /stelmo/loren/despereaux/raw/20191125/20191125_despereaux_04_r2.stateScriptLog
+   task_epochs:
+    - 4
  - name: Statescript3
    description: Statescript log r3
    path: /stelmo/loren/despereaux/raw/20191125/20191125_despereaux_06_r3.stateScriptLog
-
+   task_epochs:
+    - 6
+    
 device:
   name:
     - Trodes
@@ -47,13 +53,13 @@ cameras:
     manufacturer: unknown
     model: unknown
     lens: unknown
-    camera_name: beans sleep camera
+    camera_name: despereaux sleep camera
   - id: 1
     meters_per_pixel: 0.002
     manufacturer: unknown2
     model: unknown2
     lens: unknown2
-    camera_name: beans run camera 
+    camera_name: despereaux run camera 
 
 tasks:
   - task_name:          Sleep
