@@ -18,7 +18,10 @@ data acq device:
     adc_circuit: Intan
 
 # A/D units to volts: 0.195 uV / lsb 
-conversion = 0.000000195 
+raw_data_to_volts: = 0.000000195 
+
+default_header_file_path: default_header.xml
+
 
 associated_files:
  - name: Statescript1
@@ -83,6 +86,8 @@ tasks:
 associated_video_files:
   - name: 20191125_despereaux_01_s1.1.h264
     camera_id : 0
+  - name: 20191125_despereaux_02_r1.1.h264
+    camera_id : 1
     
 behavioral_events:
   - description: Dout10

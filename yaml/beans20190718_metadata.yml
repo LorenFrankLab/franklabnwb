@@ -34,7 +34,8 @@ units:
 
 times_period_multiplier: 1.5
 # A/D units to volts: 0.195 uV / lsb 
-conversion : 0.000000195 
+raw_data_to_volts : 0.000000195 
+default_header_file_path: default_header.xml
 
 cameras:
   - id: 0
