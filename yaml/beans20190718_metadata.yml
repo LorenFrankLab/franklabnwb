@@ -18,11 +18,16 @@ data acq device:
     adc_circuit: Intan
 
 associated_files:
- -  name: associated file
-    description: test description 1
-    path: /Users/loren/data/nwb_builder_test_data/beans/a
+ -  name: statescript_r1
+    description: state script log run 1
+    path: /stelmo/loren/beans/raw/20190718/20190718_beans_02_r1.stateScriptLog
     task_epochs: 
-      - 1
+      - 2
+ -  name: statescript_r2
+    description: state script log run 2
+    path: /stelmo/loren/beans/raw/20190718/20190718_beans_04_r2.stateScriptLog
+    task_epochs: 
+      - 4
 
 device:
   name:

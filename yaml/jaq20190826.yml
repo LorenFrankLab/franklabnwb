@@ -1,170 +1,124 @@
-experimenter name: Anna Gillespie
-lab:               Loren Frank
-institution:       University of California, San Francisco
-experiment description: Sungod control
-session description: Sungod 
-session_id:        '4'
+# general information about the experiment 
+experimenter name: Abhilasha Joshi
+lab: Loren Frank
+institution: University of California, San Francisco
+experiment description: Theta and gait
+session description: Theta and gait
+session_id: jaq_01
 subject:
-  description:     Long Evans Rat
-  genotype:        Wild Type
-  sex:             Male
-  species:         Rat
-  subject id:      Despereaux
-  weight:          Unknown
-
+  description: Long Evans Rat
+  genotype: Wild Type
+  sex: Male
+  species: Rat
+  subject id: Jaq
+  weight: Unknown
+#Units of analog and behavioral_events
+units:
+  analog: 'unspecified'
+  behavioral_events: 'unspecified'  
+#data acq device used in experiment   
 data acq device:
   - system: SpikeGadgets
     amplifier: Intan  
     adc_circuit: Intan
 
-# A/D units to volts: 0.195 uV / lsb 
-raw_data_to_volts: 0.000000195 
-
-default_header_file_path: default_header.xml
-
-
-associated_files:
- - name: Statescript1
-   description: Statescript log r1
-   path: /stelmo/loren/despereaux/raw/20191125/20191125_despereaux_02_r1.stateScriptLog
-   task_epochs:
-    - 2
- - name: Statescript2
-   description: Statescript log r2
-   path: /stelmo/loren/despereaux/raw/20191125/20191125_despereaux_04_r2.stateScriptLog
-   task_epochs:
-    - 4
- - name: Statescript3
-   description: Statescript log r3
-   path: /stelmo/loren/despereaux/raw/20191125/20191125_despereaux_06_r3.stateScriptLog
-   task_epochs:
-    - 6
-    
-device:
-  name:
-    - Trodes
-
-units:
-  analog: 'unspecified'
-  behavioral_events: 'unspecified'
-
-times_period_multiplier: 1.5
-
+#CameraDevice that were used in experiment. s  
 cameras:
   - id: 0
     meters_per_pixel: 0.00055
     manufacturer: unknown
     model: unknown
     lens: unknown
-    camera_name: despereaux sleep camera
+    camera_name: jaq sleep camera
   - id: 1
     meters_per_pixel: 0.002
     manufacturer: unknown2
     model: unknown2
     lens: unknown2
-    camera_name: despereaux run camera 
+    camera_name: jaq run camera 
 
+
+# A/D units to volts: 0.195 uV / lsb 
+raw_data_to_volts : 0.000000195 
+default_header_file_path: default_header.xml
+
+#Tasks represent epochs in experiment. Contains task_name, task_description, camera_id that were used in this task and task_epochs that this task correspond to. Stored in behavioral section in output nwb file.
 tasks:
-  - task_name:          Sleep
+  - task_name:          sleep
     task_description:   The animal sleeps in a small empty box.
-    camera_id: 
+    camera_id:
       - 0
     task_epochs:
       - 1
       - 3
       - 5
       - 7
-  - task_name:            Sungod
-    task_description:     goal_delay
-    camera_id: 
+  - task_name:            lineartrack
+    task_description:     rewarded alternation on a linear track
+    camera_id:
       - 1
     task_epochs:
       - 2
       - 4
       - 6
+# Associated files which describe content of files stored inside nwb as text.
+associated_files:
+ -  name: statescript_r1
+    description: state script log run 1
+    path: /stelmo/abhilasha/animals/Jaq/raw/20190826/20190826_Jaq_02_lineartrack.stateScriptLog
+    task_epochs: 
+      - 2
+ -  name: statescript_r2
+    description: state script log run 2
+    path: /stelmo/abhilasha/animals/Jaq/raw/20190826/20190826_Jaq_04_lineartrack.stateScriptLog
+    task_epochs: 
+      - 4
+ -  name: statescript_r3
+    description: state script log run 3
+    path: /stelmo/abhilasha/animals/Jaq/raw/20190826/20190826_Jaq_06_lineartrack.stateScriptLog
+    task_epochs: 
+      - 6
 
+# Associated video files describe .h264 files stored as ImageSeries in nwb.
 associated_video_files:
-  - name: 20191125_despereaux_01_s1.1.h264
+  - name: 20190826_Jaq_01_sleep.1.h264
     camera_id : 0
-  - name: 20191125_despereaux_02_r1.1.h264
+    task_epoch: 1
+  - name: 20190826_Jaq_03_sleep.1.h264
+    camera_id : 0
+    task_epoch: 1
+  - name: 20190826_Jaq_05_sleep.1.h264
+    camera_id : 0
+    task_epoch: 5
+  - name: 20190826_Jaq_07_sleep.1.h264
+    camera_id : 0
+    task_epoch: 7  
+  - name: 20190826_Jaq_02_lineartrack.1.h264
     camera_id : 1
-    
-behavioral_events:
-  - description: Dout10
-    name: homelight
-  - description: Din10
-    name: homebeam
-  - description: Dout25
-    name: homepump
-  - description: Dout11
-    name: Rlight
-  - description: Din11
-    name: Rbeam
-  - description: Dout26
-    name: Rpump
-  - description: Dout12
-    name: Wlight
-  - description: Din12
-    name: Wbeam
-  - description: Dout27
-    name: Wpump
-  - description: Dout1
-    name: arm1light
-  - description: Din1
-    name: arm1beam  
-  - description: Dout17
-    name: arm1pump
-  - description: Dout2
-    name: arm2light
-  - description: Din2
-    name: arm2beam  
-  - description: Dout18
-    name: arm2pump
-  - description: Dout3
-    name: arm3light
-  - description: Din3
-    name: arm3beam  
-  - description: Dout19
-    name: arm3pump
-  - description: Dout4
-    name: arm4light
-  - description: Din4
-    name: arm4beam  
-  - description: Dout20
-    name: arm4pump
-  - description: Dout5
-    name: arm5light
-  - description: Din5
-    name: arm5beam  
-  - description: Dout21
-    name: arm5pump
-  - description: Dout6
-    name: arm6light
-  - description: Din6
-    name: arm6beam  
-  - description: Dout22
-    name: arm6pump
-  - description: Dout7
-    name: arm7light
-  - description: Din7
-    name: arm7beam  
-  - description: Dout23
-    name: arm7pump
-  - description: Dout8
-    name: arm8light
-  - description: Din8
-    name: arm8beam  
-  - description: Dout24
-    name: arm8pump
-  - description: Din32
-    name: camsync_run  
-  - description: Din31
-    name: camsync_sleep
-    
+    task_epoch: 2  
+  - name: 20190826_Jaq_04_lineartrack.1.h264
+    camera_id : 1
+    task_epoch: 4
+  - name: 20190826_Jaq_06_lineartrack.1.h264
+    camera_id : 1
+    task_epoch: 6
 
+# Times period multiplier is used in pos/mda invalid/valid times, to multiply the period when detecting gaps,
+    #to avoid creating invalid times in case of only small deviations. (optional parameter, default 1.5)
+times_period_multiplier: 1.5    
+
+# Din/Dout events which filter out files from DIO data in data directory. Each name has to be unique. Stored in behavioral_events section in output nwb file.
+behavioral_events: 
+  - name: Poke2
+    description: Din2
+ # Device name. Stored in output nwb file.
+device: 
+  name:
+    - Trodes
+ # Electrode Groups list used in experiment. Each Id has to be unique, device_type has to refer to existing device_type in probe.yml. Target_x,y,z fields describe the specified location where this group should be. Possible value of units: 'um' or 'mm' 
 electrode groups:
   - id: 0
-    location: bad_CA1
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -281,7 +235,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 13
-    location: cc
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -308,7 +262,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 16
-    location: lost
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -371,7 +325,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 23
-    location: cc
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -407,7 +361,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 27
-    location: bad_CA1
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -416,7 +370,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 28
-    location: bad_CA1
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -425,7 +379,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 29
-    location: bad_CA1
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -434,10 +388,10 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 30
-    location: None
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
-    targeted_location: None
+    targeted_location: CA1
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
@@ -446,7 +400,7 @@ electrode groups:
     location: None
     device_type: tetrode_12.5
     description: 'tetrode'
-    targeted_location: None
+    targeted_location: CA1
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
