@@ -5,44 +5,80 @@ compatible naming system
 
 ## Instructions for initial setup and testing: 
 
+### Prerequisites
+
+- [Download](https://bitbucket.org/mkarlsso/trodes/downloads/) and install Trodes export code, and add installed directory to path.
+
+    - NOTE: v1.9.* seems to have an issue in mda file export (tested on Linux as of 10/4/2020). Install v1.8.2 instead.
+
+    - If you accepted the default location suggested by the graphical installer, you can add this line to your `~/.bashrc`:
+        
+        ```
+        PATH="${HOME}/SpikeGadgets:$PATH"
+        ```
+        
+        Change accordingly if you chose a different location.
+
+
+
+### Setting up a python environment
+
 1. Clone this repository to your home directory:
+    
+    ```
+    git clone https://github.com/LorenFrankLab/franklabnwb.git
+    ```
 
-	git clone https://github.com/LorenFrankLab/franklabnwb.git
+2. Strongly suggested: create and activate a new conda environment.
+    If conda is not installed, follow the [documentation](https://docs.anaconda.com/anaconda/install/) to install either Anaconda or Miniconda.
 
-2. Install trodes export code from https://bitbucket.org/mkarlsso/trodes/downloads/ and add installed
-directory to path.
+    Create a new environment:
+    
+    ```
+    conda create --name rec_to_nwb python=3.6
+    ```
+    
+    Activate the environment:
+    
+    ```
+    conda activate rec_to_nwb
+    ```
 
-3. Strongly suggested: create and activate a new conda environment:
+3. Install the required packages for the conversion.
 
-	conda create --name rec_to_nwb python=3.6
-	
-	conda activate rec_to_nwb
+    ```
+    conda install -c conda-forge -c novelakrk rec_to_nwb
+    ```
 
-4. Install the required packages for the conversion
+4.  Install Jupyter notebook.
 
-	conda install -c conda-forge -c novelakrk rec_to_nwb
+    ```
+    conda install -c conda-forge notebook
+    ```
+   
+   <!---
+   You can alternatively do
+   `pip install jupyter notebook`,
+   but it is recommended to use `conda install` as much as possible when using a conda environment.
+   --->
 
-5.  Install Jupyter notebook
+5. Start the notebook server from a directory below the franklabnwb directory:
 
-	pip install jupyter notebook
+    ```
+    jupyter notebook
+    ```
 
-6. Start the notebook server from a directory below the franklabnwb directory:
+6. In the notebook, navigate to the `franklabnwb/notebooks` directory and open
+    `franklab_nwb_generation.ipynb`.
 
-	jupyter notebook
-
-7. In the notebook, navigate to the franklabnwb/notebooks directory and open 
-
-	franklab_nwb_generation.ipynb
-
-8. Edit the variables in that notebook as required for your data and run all cells. See below for more
-information on the animal metadata file
+7. Edit the variables in that notebook as required for your data and run all cells. See below for more
+information on the animal metadata file.
 
 
 ## Animal metadata file:
 
-rec_to_nwb requires a metadata file for each day of recording. Details on the content of that file can
-be found at https://novelaneuro.github.io/rec_to_nwb-docs/README.html#how-to-use-it
+`rec_to_nwb` requires a metadata file for each day of recording. Details on the content of that file can
+be found in the
+[documentation](https://novelaneuro.github.io/rec_to_nwb-docs/README.html#how-to-use-it).
 
-Alternatively, you can start with the franklabnwb/yaml/beans20190718_metadata.yml file as an example
-
-
+Alternatively, you can start with the [franklabnwb/yaml/beans20190718_metadata.yml](yaml/beans20190718_metadata.yml) file as an example.
