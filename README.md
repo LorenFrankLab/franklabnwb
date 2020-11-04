@@ -47,7 +47,11 @@ compatible naming system
 3. Install the required packages for the conversion.
 
     ```
-    conda install -c conda-forge -c novelakrk rec_to_nwb
+    conda install -c conda-forge -c novelakrk 
+    cd your_source_directory
+    git clone https://github.com/LorenFrankLab/rec_to_nwb.git
+    cd rec_to_nwb
+    python setup.py develop
     ```
 
 4.  Install Jupyter notebook.
