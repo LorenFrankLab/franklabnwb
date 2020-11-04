@@ -28,56 +28,26 @@ compatible naming system
     ```
     cd your_source_directory
     git clone https://github.com/LorenFrankLab/franklabnwb.git
-    ```
-
-2. Strongly suggested: create and activate a new conda environment.
-    If conda is not installed, follow the [documentation](https://docs.anaconda.com/anaconda/install/) to install either Anaconda or Miniconda.
-
-    Create a new environment:
-    
-    ```
-    conda create --name rec_to_nwb python=3.6
-    ```
-    
-    Activate the environment:
-    
-    ```
-    conda activate rec_to_nwb
-    ```
-
-3. Install the required packages for the conversion.
-
-    ```
-    conda install -c conda-forge -c novelakrk 
-    cd your_source_directory
     git clone https://github.com/LorenFrankLab/rec_to_nwb.git
-    cd rec_to_nwb
-    python setup.py develop
-    cd your_source_dictory
     ```
 
-4.  Install Jupyter notebook.
+2. Create the conda environment required for the conversion
 
     ```
-    conda install -c conda-forge notebook
+    cd rec_to_nwb/rec_to_nwb
+    conda env create -f environment.yml
     ```
-   
-   <!---
-   You can alternatively do
-   `pip install jupyter notebook`,
-   but it is recommended to use `conda install` as much as possible when using a conda environment.
-   --->
 
-5. Start the notebook server from a directory below the franklabnwb directory:
+3. Start the notebook server from a directory below the franklabnwb directory:
 
     ```
     jupyter notebook
     ```
 
-6. In the notebook, navigate to the `franklabnwb/notebooks` directory and open
+4. In the notebook, navigate to the `franklabnwb/notebooks` directory and open
     `franklab_nwb_generation.ipynb`.
 
-7. Edit the variables in that notebook as required for your data and run all cells. See below for more
+5. Edit the variables in that notebook as required for your data and run all cells. See below for more
 information on the animal metadata file.
 
 
