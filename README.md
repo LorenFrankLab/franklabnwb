@@ -52,6 +52,7 @@ compatible naming system
     git clone https://github.com/LorenFrankLab/rec_to_nwb.git
     cd rec_to_nwb
     python setup.py develop
+    cd ..
     ```
 
 4.  Install Jupyter notebook.
