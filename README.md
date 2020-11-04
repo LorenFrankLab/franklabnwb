@@ -23,9 +23,10 @@ compatible naming system
 
 ### Setting up a python environment
 
-1. Clone this repository to your home directory:
+1. Clone this repository to your code source directory:
     
     ```
+    cd your_source_directory
     git clone https://github.com/LorenFrankLab/franklabnwb.git
     ```
 
@@ -52,7 +53,7 @@ compatible naming system
     git clone https://github.com/LorenFrankLab/rec_to_nwb.git
     cd rec_to_nwb
     python setup.py develop
-    cd ..
+    cd your_source_dictory
     ```
 
 4.  Install Jupyter notebook.
