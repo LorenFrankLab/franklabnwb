@@ -7,17 +7,11 @@ compatible naming system
 
 ### Prerequisites
 
-- [Download](https://bitbucket.org/mkarlsso/trodes/downloads/) and install Trodes export code, and add installed directory to path.
+- [Download](https://bitbucket.org/mkarlsso/trodes/downloads/) and install Trodes export code, and add the installed directory to path.
 
     - NOTE: v1.9.* seems to have an issue in mda file export (tested on Linux as of 10/4/2020). Install v1.8.2 instead.
 
-    - If you accepted the default location suggested by the graphical installer, you can add this line to your `~/.bashrc`:
-        
-        ```
-        PATH="${HOME}/SpikeGadgets:$PATH"
-        ```
-        
-        Change accordingly if you chose a different location.
+    For more detailed instructions, see [Installing SpikeGadgets](installing_spikegadgets.md).
 
 
 
