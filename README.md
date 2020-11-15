@@ -25,11 +25,14 @@ compatible naming system
     git clone https://github.com/LorenFrankLab/rec_to_nwb.git
     ```
 
-2. Create the conda environment required for the conversion
+2. Create the conda environment required for the conversion and install the rec_to_nwb module
 
     ```
     cd rec_to_nwb/rec_to_nwb
     conda env create -f environment.yml
+    conda activate rec_to_nwb
+    cd ..
+    python setup.py install
     ```
 
 3. Start the notebook server from a directory below the franklabnwb directory:
