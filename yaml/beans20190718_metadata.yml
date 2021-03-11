@@ -131,6 +131,11 @@ behavioral_events:
   - description: Dout12
     name: Pump6
 
+
+#Important note: right now the code assumes that the electrode groups listed below (each of which corresponds to one or more NTrodes in the file) 
+# are in ascending order by NTrode number. If this is not the case the data could be scrambled.  Thus, the first listed electrode group should correspond to, 
+# for example, NTrode 1-4 while the second would correspond to NTrode 5-8, etc.  
+
 electrode groups:
   - id: 0
     location: mPFC
