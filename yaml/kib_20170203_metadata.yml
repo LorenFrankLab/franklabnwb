@@ -120,7 +120,7 @@ electrode groups:
     location: Hippocampus
     device_type: 64c-3s6mm6cm-20um-40um-sl
     description: 'Probe 1'
-    targeted_location: 'Hp'
+    targeted_location: Hippocampus
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
@@ -129,7 +129,7 @@ electrode groups:
     location: Hippocampus
     device_type: 64c-3s6mm6cm-20um-40um-sl
     description: 'Probe 2'
-    targeted_location: 'Hp'
+    targeted_location: Hippocampus
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
@@ -153,10 +153,10 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 5
-    location: 'Unknown'
+    location: PFC
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 5'
-    targeted_location: 'Sample predicted location'
+    targeted_location: PFC
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
@@ -165,16 +165,16 @@ electrode groups:
     location: 'Unknown'
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 6'
-    targeted_location: 'Sample predicted location'
+    targeted_location: 'Unknown'
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
   - id: 7
-    location: 'Unknown'
+    location: PFC
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 7'
-    targeted_location: 'Sample predicted location'
+    targeted_location: PFC
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
@@ -183,79 +183,79 @@ electrode groups:
     location: 'Unknown'
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 8'
-    targeted_location: 'Sample predicted location'
+    targeted_location: 'Unknown'
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
   - id: 9
-    location: 'Unknown'
+    location: OFC
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 9'
-    targeted_location: 'Sample predicted location'
+    targeted_location: OFC
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
   - id: 10
-    location: 'Unknown'
+    location: OFC
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 10'
-    targeted_location: 'Sample predicted location'
+    targeted_location: OFC
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
   - id: 11
-    location: 'Unknown'
+    location: OFC
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 11'
-    targeted_location: 'Sample predicted location'
+    targeted_location: OFC
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
   - id: 12
-    location: 'Unknown'
+    location: OFC
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 12'
-    targeted_location: 'Sample predicted location'
+    targeted_location: OFC
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
   - id: 13
-    location: 'Unknown'
+    location: NAcc
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 13'
-    targeted_location: 'Sample predicted location'
+    targeted_location: NAcc
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
   - id: 14
-    location: 'Unknown'
+    location: NAcc
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 14'
-    targeted_location: 'Sample predicted location'
+    targeted_location: NAcc
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
   - id: 15
-    location: 'Unknown'
+    location: NAcc
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 15'
-    targeted_location: 'Sample predicted location'
+    targeted_location: NAcc
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
   - id: 16
-    location: 'Unknown'
+    location: NAcc
     device_type: 64c-4s6mm6cm-20um-40um-dl
     description: 'Probe 16'
-    targeted_location: 'Sample predicted location'
+    targeted_location: NAcc
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
@@ -265,7 +265,7 @@ electrode groups:
 ntrode electrode group channel map:
   - ntrode_id: 1
     electrode_group_id: 1
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
     map:
       0: 0
       1: 1
@@ -291,7 +291,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 2
     electrode_group_id: 1
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
     map:
       0: 21
       1: 22
@@ -317,7 +317,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 3
     electrode_group_id: 1
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
     map:
       0: 42
       1: 43
@@ -344,7 +344,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 4
     electrode_group_id: 2
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
     map:
       0: 0
       1: 1
@@ -423,7 +423,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 7
     electrode_group_id: 3
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 0
       1: 1
@@ -444,7 +444,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 8
     electrode_group_id: 3
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 16
       1: 17
@@ -465,7 +465,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 9
     electrode_group_id: 3
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 32
       1: 33
@@ -486,7 +486,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 10
     electrode_group_id: 3
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 48
       1: 49
@@ -507,7 +507,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 11
     electrode_group_id: 4
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 0
       1: 1
@@ -528,7 +528,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 12
     electrode_group_id: 4
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 16
       1: 17
@@ -549,7 +549,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 13
     electrode_group_id: 4
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 32
       1: 33
@@ -570,7 +570,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 14
     electrode_group_id: 4
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 48
       1: 49
@@ -676,7 +676,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 19
     electrode_group_id: 6
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 0
       1: 1
@@ -697,7 +697,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 20
     electrode_group_id: 6
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 16
       1: 17
@@ -718,7 +718,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 21
     electrode_group_id: 6
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 32
       1: 33
@@ -739,7 +739,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 22
     electrode_group_id: 6
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 48
       1: 49
@@ -846,7 +846,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 27
     electrode_group_id: 8
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 0
       1: 1
@@ -867,7 +867,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 28
     electrode_group_id: 8
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 16
       1: 17
@@ -888,7 +888,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 29
     electrode_group_id: 8
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 32
       1: 33
@@ -909,7 +909,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 30
     electrode_group_id: 8
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 48
       1: 49
@@ -1077,7 +1077,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 38
     electrode_group_id: 10
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 48
       1: 49
@@ -1204,7 +1204,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 44
     electrode_group_id: 12
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 16
       1: 17
@@ -1225,7 +1225,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 45
     electrode_group_id: 12
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 32
       1: 33
@@ -1519,7 +1519,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 59
     electrode_group_id: 16
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 0
       1: 1
@@ -1561,7 +1561,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 61
     electrode_group_id: 16
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 32
       1: 33
@@ -1582,7 +1582,7 @@ ntrode electrode group channel map:
 
   - ntrode_id: 62
     electrode_group_id: 16
-    bad_channels: []
+    bad_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     map:
       0: 48
       1: 49
