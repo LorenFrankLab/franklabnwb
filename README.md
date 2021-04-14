@@ -41,11 +41,16 @@ compatible naming system
     jupyter notebook
     ```
 
-4. In the notebook, navigate to the `franklabnwb/notebooks` directory and open
+4. Try from notebook: 
+    In the notebook, navigate to the `franklabnwb/notebooks` directory and open
     `franklab_nwb_generation.ipynb`.
 
-5. Edit the variables in that notebook as required for your data and run all cells. See below for more
-information on the animal metadata file.
+     Edit the variables in that notebook as required for your data and run all cells. See below for more
+    information on the animal metadata file.
+
+5. Try from file:
+    Edit 'create_nwb_example.py' to match your data and run that:
+    python create_nwb_examply.py
 
 
 ## Animal metadata file:

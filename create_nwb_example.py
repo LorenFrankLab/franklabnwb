@@ -10,10 +10,10 @@ def main():
     print('Setting variables', flush=True)
    
     # set the animal name and the date or list of dates to process
-    animal_name = 'beans'
-    date = '20190718'
-    animal_metadata_file = 'beans20190718_metadata.yml'
-    reconfig_file = '/stelmo/loren/beans/Probe_128ch_allnT_DIOs_PTP_reconfig_export_shanks.xml'
+    # animal_name = 'beans'
+    # date = '20190718'
+    # animal_metadata_file = 'beans20190718_metadata.yml'
+    # reconfig_file = '/stelmo/loren/beans/Probe_128ch_allnT_DIOs_PTP_reconfig_export_shanks.xml'
 
     animal_name = 'despereaux'
     date = '20191125'
