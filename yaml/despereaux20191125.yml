@@ -163,17 +163,8 @@ behavioral_events:
     
 
 electrode groups:
-  - id: 0
-    location: bad_CA1
-    device_type: tetrode_12.5
-    description: 'tetrode'
-    targeted_location: CA1
-    targeted_x: 0.0
-    targeted_y: 0.0
-    targeted_z: 0.0
-    units: 'um'
   - id: 1
-    location: CA1
+    location: bad_CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -281,7 +272,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 13
-    location: cc
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -290,7 +281,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 14
-    location: CA1
+    location: cc
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -308,7 +299,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 16
-    location: lost
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -317,7 +308,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 17
-    location: CA1
+    location: lost
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -371,7 +362,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 23
-    location: cc
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -380,7 +371,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 24
-    location: CA1
+    location: cc
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -407,7 +398,7 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 27
-    location: bad_CA1
+    location: CA1
     device_type: tetrode_12.5
     description: 'tetrode'
     targeted_location: CA1
@@ -434,10 +425,10 @@ electrode groups:
     targeted_z: 0.0
     units: 'um'
   - id: 30
-    location: None
+    location: bad_CA1
     device_type: tetrode_12.5
     description: 'tetrode'
-    targeted_location: None
+    targeted_location: CA1
     targeted_x: 0.0
     targeted_y: 0.0
     targeted_z: 0.0
@@ -451,18 +442,18 @@ electrode groups:
     targeted_y: 0.0
     targeted_z: 0.0
     units: 'um'
+  - id: 32
+    location: None
+    device_type: tetrode_12.5
+    description: 'tetrode'
+    targeted_location: None
+    targeted_x: 0.0
+    targeted_y: 0.0
+    targeted_z: 0.0
+    units: 'um'
 
 ntrode electrode group channel map:
   - ntrode_id: 1
-    electrode_group_id: 0
-    bad_channels: []
-    map:
-      0: 0
-      1: 1
-      2: 2
-      3: 3
-
-  - ntrode_id: 2
     electrode_group_id: 1
     bad_channels: []
     map:
@@ -471,7 +462,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 3
+  - ntrode_id: 2
     electrode_group_id: 2
     bad_channels: []
     map:
@@ -480,7 +471,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 4
+  - ntrode_id: 3
     electrode_group_id: 3
     bad_channels: []
     map:
@@ -489,7 +480,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 5
+  - ntrode_id: 4
     electrode_group_id: 4
     bad_channels: []
     map:
@@ -498,7 +489,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 6
+  - ntrode_id: 5
     electrode_group_id: 5
     bad_channels: []
     map:
@@ -507,7 +498,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 7
+  - ntrode_id: 6
     electrode_group_id: 6
     bad_channels: []
     map:
@@ -516,7 +507,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 8
+  - ntrode_id: 7
     electrode_group_id: 7
     bad_channels: []
     map:
@@ -525,7 +516,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 9
+  - ntrode_id: 8
     electrode_group_id: 8
     bad_channels: []
     map:
@@ -534,7 +525,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 10
+  - ntrode_id: 9
     electrode_group_id: 9
     bad_channels: []
     map:
@@ -543,7 +534,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 11
+  - ntrode_id: 10
     electrode_group_id: 10
     bad_channels: []
     map:
@@ -552,7 +543,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 12
+  - ntrode_id: 11
     electrode_group_id: 11
     bad_channels: []
     map:
@@ -561,7 +552,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 13
+  - ntrode_id: 12
     electrode_group_id: 12
     bad_channels: []
     map:
@@ -570,7 +561,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 14
+  - ntrode_id: 13
     electrode_group_id: 13
     bad_channels: []
     map:
@@ -579,7 +570,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 15
+  - ntrode_id: 14
     electrode_group_id: 14
     bad_channels: []
     map:
@@ -588,7 +579,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 16
+  - ntrode_id: 15
     electrode_group_id: 15
     bad_channels: []
     map:
@@ -597,7 +588,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 17
+  - ntrode_id: 16
     electrode_group_id: 16
     bad_channels: []
     map:
@@ -606,7 +597,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 18
+  - ntrode_id: 17
     electrode_group_id: 17
     bad_channels: []
     map:
@@ -615,7 +606,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 19
+  - ntrode_id: 18
     electrode_group_id: 18
     bad_channels: []
     map:
@@ -624,7 +615,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 20
+  - ntrode_id: 19
     electrode_group_id: 19
     bad_channels: []
     map:
@@ -633,7 +624,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 21
+  - ntrode_id: 20
     electrode_group_id: 20
     bad_channels: []
     map:
@@ -642,7 +633,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 22
+  - ntrode_id: 21
     electrode_group_id: 21
     bad_channels: []
     map:
@@ -651,7 +642,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 23
+  - ntrode_id: 22
     electrode_group_id: 22
     bad_channels: []
     map:
@@ -660,7 +651,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 24
+  - ntrode_id: 23
     electrode_group_id: 23
     bad_channels: []
     map:
@@ -669,7 +660,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 25
+  - ntrode_id: 24
     electrode_group_id: 24
     bad_channels: []
     map:
@@ -678,7 +669,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 26
+  - ntrode_id: 25
     electrode_group_id: 25
     bad_channels: []
     map:
@@ -687,7 +678,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 27
+  - ntrode_id: 26
     electrode_group_id: 26
     bad_channels: []
     map:
@@ -696,7 +687,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 28
+  - ntrode_id: 27
     electrode_group_id: 27
     bad_channels: []
     map:
@@ -705,7 +696,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 29
+  - ntrode_id: 28
     electrode_group_id: 28
     bad_channels: []
     map:
@@ -714,7 +705,7 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 30
+  - ntrode_id: 29
     electrode_group_id: 29
     bad_channels: []
     map:
@@ -723,8 +714,17 @@ ntrode electrode group channel map:
       2: 2
       3: 3
 
-  - ntrode_id: 31
+  - ntrode_id: 30
     electrode_group_id: 30
+    bad_channels: []
+    map:
+      0: 0
+      1: 1
+      2: 2
+      3: 3
+
+  - ntrode_id: 31
+    electrode_group_id: 31
     bad_channels: [0, 1, 2, 3]
     map:
       0: 0
@@ -733,7 +733,7 @@ ntrode electrode group channel map:
       3: 3
 
   - ntrode_id: 32
-    electrode_group_id: 31
+    electrode_group_id: 32
     bad_channels: [0, 1, 2, 3]
     map:
       0: 0

@@ -34,8 +34,8 @@ def main():
 
     #Specify the paths for the data, the output nwb file, and the video files
     data_path = '/stelmo/loren/'
-    output_path='/stelmo/nwb/'
-    video_path='/stelmo/nwb/video/'
+    output_path='/stelmo/loren/'
+    video_path='/stelmo/loren/'
 
     # data_path = '/Users/loren/data/nwb_builder_test_data/'
     # output_path='//Users/loren/data/nwb_builder_test_data/tmp'
@@ -87,7 +87,8 @@ def main():
                             extract_analog=True)
 
     print('Building and Writing', flush=True)
-    builder.build_nwb(process_mda_valid_time='False',
+    builder.build_nwb(run_preprocessing='False', 
+                            process_mda_valid_time='False',
                             process_mda_invalid_time='False',
                             process_pos_valid_time='False',
                             process_pos_invalid_time='False')    
