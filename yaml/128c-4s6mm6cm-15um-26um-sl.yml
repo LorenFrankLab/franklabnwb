@@ -89,7 +89,7 @@ shanks:
         rel_z: 0
       - id: 20
         rel_x: 0
-        rel_y: -338
+        rel_y: -520
         rel_z: 0
       - id: 21
         rel_x: 0
@@ -133,7 +133,7 @@ shanks:
         rel_z: 0
       - id: 31
         rel_x: 0
-        rel_y: -526
+        rel_y: -806
         rel_z: 0
   - shank_id: 1
     electrodes:
@@ -219,7 +219,7 @@ shanks:
         rel_z: 0
       - id: 52
         rel_x: 350
-        rel_y: -338
+        rel_y: -520
         rel_z: 0
       - id: 53
         rel_x: 350
@@ -263,7 +263,7 @@ shanks:
         rel_z: 0
       - id: 63
         rel_x: 350
-        rel_y: -526
+        rel_y: -806
         rel_z: 0
   - shank_id: 2
     electrodes:
@@ -349,7 +349,7 @@ shanks:
         rel_z: 0
       - id: 84
         rel_x: 774
-        rel_y: -338
+        rel_y: -520
         rel_z: 0
       - id: 85
         rel_x: 774
@@ -393,7 +393,7 @@ shanks:
         rel_z: 0
       - id: 95
         rel_x: 774
-        rel_y: -526
+        rel_y: -806
         rel_z: 0
   - shank_id: 3
     electrodes:
@@ -479,7 +479,7 @@ shanks:
         rel_z: 0
       - id: 116
         rel_x: 1124
-        rel_y: -338
+        rel_y: -520
         rel_z: 0
       - id: 117
         rel_x: 1124
@@ -523,5 +523,5 @@ shanks:
         rel_z: 0
       - id: 127
         rel_x: 1124
-        rel_y: -526
+        rel_y: -806
         rel_z: 0
