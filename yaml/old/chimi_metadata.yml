@@ -1,15 +1,15 @@
-experimenter name: Alison
+experimenter_name: Alison
 lab:               Frank lab
 institution:       UCSF
-experiment description: HC-Cx interactions supporting memory and value-guided decision-making
-session description: example_experiment_day
+experiment_description: HC-Cx interactions supporting memory and value-guided decision-making
+session_description: example_experiment_day
 session_id:        20200212_day33_behavior1 #if each yaml is day/session specific it might make sense to keep something about that in the file name? I realize that can require strict formatting though, i.e. "rat_yyyymmdd_metadata"
 subject:
   description:     Long Evans adult #potentially DOB good to have, or age?
   genotype:        wild type
   sex:             male
   species:         rat
-  subject id:      chimi #ac23
+  subject_id:      chimi #ac23
   weight:          541 g #units!
 
 tasks:
@@ -72,7 +72,7 @@ device:
   name:
     - Trodes
 
-electrode groups:
+electrode_groups:
   - id: 0
     location: left dHC
     device_type: tetrode
