@@ -28,7 +28,7 @@ compatible naming system
 2. Create the conda environment required for the conversion and install the rec_to_nwb module
 
     ```
-    cd rec_to_nwb/rec_to_nwb
+    cd rec_to_nwb
     conda env create -f environment.yml
     conda activate rec_to_nwb
     cd ..
