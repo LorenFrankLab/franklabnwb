@@ -31,7 +31,6 @@ compatible naming system
     cd rec_to_nwb
     conda env create -f environment.yml
     conda activate rec_to_nwb
-    cd ..
     pip install -e .
     ```
 
