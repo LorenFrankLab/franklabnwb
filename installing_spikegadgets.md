@@ -9,8 +9,6 @@ So it is required that you have these executable files "installed" on your machi
 
 ## Detailed instructions
 
-**NOTE**: Currently, the latest versions v1.9.* seem to have some issue with mda file export (tested on Linux as of 10/4/2020). For now you would want to install v1.8.2.
-
 ### If you have a graphical user interface:
 
 That is, if you are doing this with a display (monitor or X11 forwarding) and keyboard/mouse interaction:
