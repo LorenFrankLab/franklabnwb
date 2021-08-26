@@ -9,8 +9,6 @@ compatible naming system
 
 - [Download](https://bitbucket.org/mkarlsso/trodes/downloads/) and install Trodes export code, and add the installed directory to path.
 
-    - NOTE: v1.9.* seems to have an issue in mda file export (tested on Linux as of 10/4/2020). Install v1.8.2 instead.
-
     For more detailed instructions, see [Installing SpikeGadgets](installing_spikegadgets.md).
 
 
