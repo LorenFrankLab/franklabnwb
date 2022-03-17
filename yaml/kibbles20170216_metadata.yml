@@ -14,8 +14,8 @@ subject:
 
 data_acq_device:
   - name: SpikeGadgets
-    system: MCU
-    amplifier: intan  
+    system: SpikeGadgets
+    amplifier: intan
     adc_circuit: intan
 
 associated_files:
@@ -72,7 +72,7 @@ associated_video_files:
     camera_id : 1
   - name: 20170216_kibbles_07_s4.1.h264
     camera_id : 0
- 
+
 
 behavioral_events:
   - description: Din1
@@ -88,7 +88,7 @@ behavioral_events:
   - description: Din6
     name: Din6
 
-    
+
 device:
   name:
     - Trodes
@@ -243,7 +243,7 @@ electrode_groups:
 ntrode_electrode_group_channel_map:
   - ntrode_id: 1
     electrode_group_id: 1
-    bad_channels: [] 
+    bad_channels: []
     map:
       0: 0
       1: 1
@@ -269,7 +269,7 @@ ntrode_electrode_group_channel_map:
 
   - ntrode_id: 2
     electrode_group_id: 1
-    bad_channels: [] 
+    bad_channels: []
     map:
       0: 21
       1: 22
@@ -295,7 +295,7 @@ ntrode_electrode_group_channel_map:
 
   - ntrode_id: 3
     electrode_group_id: 1
-    bad_channels: [] 
+    bad_channels: []
     map:
       0: 42
       1: 43
@@ -322,7 +322,7 @@ ntrode_electrode_group_channel_map:
 
   - ntrode_id: 4
     electrode_group_id: 2
-    bad_channels: [] 
+    bad_channels: []
     map:
       0: 0
       1: 1
@@ -348,7 +348,7 @@ ntrode_electrode_group_channel_map:
 
   - ntrode_id: 5
     electrode_group_id: 2
-    bad_channels: [] 
+    bad_channels: []
     map:
       0: 21
       1: 22
@@ -374,7 +374,7 @@ ntrode_electrode_group_channel_map:
 
   - ntrode_id: 6
     electrode_group_id: 2
-    bad_channels: [] 
+    bad_channels: []
     map:
       0: 42
       1: 43
@@ -566,7 +566,7 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 
+
   - ntrode_id: 15
     electrode_group_id: 5
     bad_channels: []
@@ -651,7 +651,7 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 
+
   - ntrode_id: 19
     electrode_group_id: 6
     bad_channels: []
@@ -820,7 +820,7 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 
+
 
   - ntrode_id: 27
     electrode_group_id: 8
@@ -1073,7 +1073,7 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 
+
 
   - ntrode_id: 39
     electrode_group_id: 11
@@ -1158,7 +1158,7 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 
+
   - ntrode_id: 43
     electrode_group_id: 12
     bad_channels: []
@@ -1242,7 +1242,7 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 
+
   - ntrode_id: 47
     electrode_group_id: 13
     bad_channels: []
@@ -1326,7 +1326,7 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 
+
   - ntrode_id: 51
     electrode_group_id: 14
     bad_channels: []
@@ -1410,7 +1410,7 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 
+
   - ntrode_id: 55
     electrode_group_id: 15
     bad_channels: []
@@ -1494,7 +1494,7 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 
+
   - ntrode_id: 59
     electrode_group_id: 16
     bad_channels: []
@@ -1578,4 +1578,3 @@ ntrode_electrode_group_channel_map:
       13: 61
       14: 62
       15: 63
- 

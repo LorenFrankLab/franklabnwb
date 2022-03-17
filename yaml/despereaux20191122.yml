@@ -77,10 +77,10 @@ behavioral_events:
     name: Pump5
   - description: Dout12
     name: Pump6
- 
+
 data_acq_device:
   - name: trodes
-    system: MCU
+    system: SpikeGadgets
     amplifier: Intan
     adc_circuit: Intan
 

@@ -2,7 +2,7 @@ experimenter_name: Anna Gillespie
 lab:               Loren Frank
 institution:       University of California, San Francisco
 experiment_description: Sungod control
-session_description: Sungod 
+session_description: Sungod
 session_id:        '4'
 subject:
   description:     Long Evans Rat
@@ -34,7 +34,7 @@ times_period_multiplier: 1.5
 
 data_acq_device:
   - name: trodes
-    system: trodes MCU
+    system: SpikeGadgets
     amplifier: Intan
     adc_circuit: Intan
 
@@ -47,7 +47,7 @@ cameras:
 tasks:
   - task_name:          Sleep
     task_description:   The animal sleeps in a small empty box.
-    camera_id: 
+    camera_id:
       - 0
     task_epochs:
       - 1
@@ -56,7 +56,7 @@ tasks:
       - 7
   - task_name:            Sungod
     task_description:     goal_delay
-    camera_id: 
+    camera_id:
       - 1
     task_epochs:
       - 2
@@ -66,7 +66,7 @@ tasks:
 associated_video_files:
   - name: 20191125_despereaux_01_s1.1.h264
     camera_id : 0
-    
+
 behavioral_events:
   - description: Dout10
     name: homelight
@@ -89,56 +89,56 @@ behavioral_events:
   - description: Dout1
     name: arm1light
   - description: Din1
-    name: arm1beam  
+    name: arm1beam
   - description: Dout17
     name: arm1pump
   - description: Dout2
     name: arm2light
   - description: Din2
-    name: arm2beam  
+    name: arm2beam
   - description: Dout18
     name: arm2pump
   - description: Dout3
     name: arm3light
   - description: Din3
-    name: arm3beam  
+    name: arm3beam
   - description: Dout19
     name: arm3pump
   - description: Dout4
     name: arm4light
   - description: Din4
-    name: arm4beam  
+    name: arm4beam
   - description: Dout20
     name: arm4pump
   - description: Dout5
     name: arm5light
   - description: Din5
-    name: arm5beam  
+    name: arm5beam
   - description: Dout21
     name: arm5pump
   - description: Dout6
     name: arm6light
   - description: Din6
-    name: arm6beam  
+    name: arm6beam
   - description: Dout22
     name: arm6pump
   - description: Dout7
     name: arm7light
   - description: Din7
-    name: arm7beam  
+    name: arm7beam
   - description: Dout23
     name: arm7pump
   - description: Dout8
     name: arm8light
   - description: Din8
-    name: arm8beam  
+    name: arm8beam
   - description: Dout24
     name: arm8pump
   - description: Din32
-    name: camsync_run  
+    name: camsync_run
   - description: Din31
     name: camsync_sleep
-    
+
 device:
   name:
     - Trodes
