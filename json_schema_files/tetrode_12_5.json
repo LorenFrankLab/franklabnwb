@@ -1,0 +1,52 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#root/ntrode_electrode_group_channel_map/map/tetrode_12_5",
+  "title": "Map",
+  "type": "object",
+  "required": ["0", "1", "2", "3"],
+  "description": "Channel Map",
+  "items": {
+    "$id": "#root/ntrode_electrode_group_channel_map/items",
+    "title": "items",
+    "type": "object",
+    "properties": {
+      "0": {
+        "$id": "#root/ntrode_electrode_group_channel_map/items/map/tetrode_12_5/0",
+        "title": "0",
+        "type": "integer",
+        "examples": [0, 1, 2, 3],
+        "enum": [0, 1, 2, 3],
+        "minimum": 0,
+        "default": 0
+      },
+      "1": {
+        "$id": "#root/ntrode_electrode_group_channel_map/items/map/tetrode_12_5/1",
+        "title": "1",
+        "type": "integer",
+        "examples": [0, 1, 2, 3],
+        "enum": [0, 1, 2, 3],
+        "minimum": 0,
+        "default": 1
+      },
+      "2": {
+        "$id": "#root/ntrode_electrode_group_channel_map/items/map/tetrode_12_5/2",
+        "title": "2",
+        "type": "integer",
+        "examples": [0, 1, 2, 3],
+        "enum": [0, 1, 2, 3],
+        "minimum": 0,
+        "default": 2
+      },
+      "3": {
+        "$id": "#root/ntrode_electrode_group_channel_map/items/map/tetrode_12_5/3",
+        "title": "3",
+        "type": "integer",
+        "examples": [0, 1, 2, 3],
+        "enum": [0, 1, 2, 3],
+        "minimum": 0,
+        "default": 3
+      }
+    }
+  }
+}
