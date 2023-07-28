@@ -521,7 +521,7 @@
      "$id": "#root/associated_files/items",
      "title": "Items",
      "type": "object",
-     "required": ["name", "description", "path", "task_epoch"],
+     "required": ["name", "description", "path", "task_epochs"],
      "properties": {
       "name": {
        "$id": "#root/associated_files/items/name",
@@ -552,9 +552,9 @@
        ],
        "pattern": "^(.|\\s)*\\S(.|\\s)*$"
       },
-      "task_epoch": {
-       "$id": "#root/associated_files/items/task_epoch",
-       "title": "task_epoch",
+      "task_epochs": {
+       "$id": "#root/associated_files/items/task_epochs",
+       "title": "task_epochs",
        "type": "integer",
        "default": 0,
        "description": "task epoch"
@@ -771,7 +771,7 @@
      "$id": "#root/associated_video_files/items",
      "title": "Items",
      "type": "object",
-     "required": ["name", "camera_id", "task_epoch"],
+     "required": ["name", "camera_id", "task_epochs"],
      "properties": {
       "name": {
        "$id": "#root/associated_video_files/items/name",
@@ -789,9 +789,9 @@
        "description": "camera id from camera list",
        "default": 0
       },
-      "task_epoch": {
-       "$id": "#root/associated_video_files/items/task_epoch",
-       "title": "task_epoch",
+      "task_epochs": {
+       "$id": "#root/associated_video_files/items/task_epochs",
+       "title": "task_epochs",
        "type": "integer",
        "default": 0,
        "description": "task epoch"
