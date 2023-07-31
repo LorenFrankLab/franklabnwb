@@ -1,9 +1,10 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://example.com/object1663697007.json",
+  "$id": "https://lorenfranklab.github.io/rec_to_nwb_yaml_creator/v1.0.0",
   "title": "Spikegadgets to NWB Validator",
   "type": "object",
+  "description": "Spikegadgets to NWB Validator YAML schema version",
   "required": ["experimenter_name", "lab", "institution", "data_acq_device", "times_period_multiplier", "raw_data_to_volts"],
   "properties": {
    "experimenter_name": {
@@ -37,11 +38,11 @@
     "type": "string",
     "default": "University of California, San Francisco",
     "examples": [
-     "Air Force Institute of Technology Graduate School of Engineering & Management",
+     "Air Force Institute of Technology Graduate School of Engineering & Management",
      "Albert Einstein College of Medicine",
      "American University",
-     "Arizona State University Campus Immersion",
-     "Arizona State University Digital Immersion",
+     "Arizona State University Campus Immersion",
+     "Arizona State University Digital Immersion",
      "Arkansas State University",
      "Augusta University",
      "Auburn University",
@@ -208,7 +209,7 @@
      "Uniformed Services University of the Health Sciences",
      "University at Albany, SUNY",
      "University at Buffalo",
-     "University of Akron Main Campus",
+     "University of Akron Main Campus",
      "University of Alabama",
      "University of Alabama at Birmingham",
      "University of Alabama in Huntsville",
