@@ -1,0 +1,970 @@
+experiment_description: Hippocampus content feedback
+experimenter_name:
+  - Coulter, Michael
+institution: University of California, San Francisco
+lab: Loren Frank
+raw_data_to_volts: 1.95e-7
+session_description: Hippocampus content feedback
+session_id: bs28_20231107
+subject:
+  description: Long Evans Rat
+  genotype: Wild Type
+  sex: M
+  species: Rattus rattus
+  subject_id: bs28
+  weight: 500
+  date_of_birth: 2023-05-01T00:00:00.000
+cameras:
+  - camera_name: MEC_sleep_camera
+    id: 0
+    lens: unknown2
+    manufacturer: unknown2
+    meters_per_pixel: 0.00055
+    model: unknown2
+  - camera_name: MEC_run_camera
+    id: 1
+    lens: unknown
+    manufacturer: unknown
+    meters_per_pixel: 0.0022
+    model: unknown
+times_period_multiplier: 1.5
+units:
+  analog: "-1"
+  behavioral_events: "-1"
+tasks:
+  - task_name: sleep
+    task_description: The animal sleeps in a small empty box
+    task_environment: sleep box
+    camera_id:
+      - 0
+    task_epochs:
+      - 1
+      - 3
+      - 5
+      - 7
+      - 9
+      - 11
+      - 13
+  - task_name: Fork_Handle_Alternation
+    task_description: Handle Alternation Task on Fork maze
+    task_environment: fork maze
+    camera_id:
+      - 1
+    task_epochs:
+      - 2
+      - 4
+      - 6
+      - 8
+      - 10
+      - 12
+associated_files:
+  - name: statescript_r1
+    description: state script log run 1
+    path: /cumulus/baibhav/BS28_raw/20231107/20231107_BS28_02_r1.stateScriptLog
+    task_epochs: 2
+  - name: statescript_r2
+    description: state script log run 2
+    path: cumulus/baibhav/BS28_raw/20231107/20231107_BS28_04_r2.stateScriptLog
+    task_epochs: 4
+  - name: statescript_r3
+    description: state script log run 3
+    path: cumulus/baibhav/BS28_raw/20231107/20231107_BS28_06_r3.stateScriptLog
+    task_epochs: 6
+  - name: statescript_r4
+    description: state script log run 4
+    path: cumulus/baibhav/BS28_raw/20231107/20231107_BS28_08_r4.stateScriptLog
+    task_epochs: 8
+  - name: statescript_r5
+    description: state script log run 5
+    path: cumulus/baibhav/BS28_raw/20231107/20231107_BS28_10_r5.stateScriptLog
+    task_epochs: 10
+  - name: statescript_r6
+    description: state script log run 6
+    path: cumulus/baibhav/BS28_raw/20231107/20231107_BS28_12_r6.stateScriptLog
+    task_epochs: 12
+associated_video_files:
+  - name: 20231107_BS28_01_s1.1.h264
+    camera_id: 0
+    task_epochs: 1
+  - name: 20231107_BS28_03_s2.1.h264
+    camera_id: 0
+    task_epochs: 3
+  - name: 20231107_BS28_05_s3.1.h264
+    camera_id: 0
+    task_epochs: 5
+  - name: 20231107_BS28_07_s4.1.h264
+    camera_id: 0
+    task_epochs: 7
+  - name: 20231107_BS28_09_s5.1.h264
+    camera_id: 0
+    task_epochs: 9
+  - name: 20231107_BS28_11_s6.1.h264
+    camera_id: 0
+    task_epochs: 11
+  - name: 20231107_BS28_13_s7.1.h264
+    camera_id: 0
+    task_epochs: 13   
+  - name: 20231107_BS28_02_r1.1.h264
+    camera_id: 1
+    task_epochs: 2
+  - name: 20231107_BS28_04_r2.1.h264
+    camera_id: 1
+    task_epochs: 4
+  - name: 20231107_BS28_06_r3.1.h264
+    camera_id: 1
+    task_epochs: 6
+  - name: 20231107_BS28_08_r4.1.h264
+    camera_id: 1
+    task_epochs: 8
+  - name: 20231107_BS28_10_r5.1.h264
+    camera_id: 1
+    task_epochs: 10
+  - name: 20231107_BS28_12_r6.1.h264
+    camera_id: 1
+    task_epochs: 12    
+behavioral_events:
+  - description: Din1
+    name: din1
+  - description: Din2
+    name: din2
+  - description: Din3
+    name: din3
+  - description: Din4
+    name: din4
+  - description: Din5
+    name: din5
+  - description: Din6
+    name: din6
+  - description: Din7
+    name: din7
+  - description: Din8
+    name: din8
+  - description: Din9
+    name: din9
+  - description: Din10
+    name: din10
+  - description: Din11
+    name: din11
+  - description: Din12
+    name: din12
+  - description: Din13
+    name: din13
+  - description: Din14
+    name: din14
+  - description: Din15
+    name: din15
+  - description: Din16
+    name: din16
+  - description: Din17
+    name: din17
+  - description: Din18
+    name: din18
+  - description: Din19
+    name: din19
+  - description: Din20
+    name: din20
+  - description: Din21
+    name: din21
+  - description: Din22
+    name: din22
+  - description: Din23
+    name: din23
+  - description: Din24
+    name: din24
+  - description: Din25
+    name: din25
+  - description: Din26
+    name: din26
+  - description: Din27
+    name: din27
+  - description: Din28
+    name: din28
+  - description: Din29
+    name: din29
+  - description: Din30
+    name: din30
+  - description: Din31
+    name: din31
+  - description: Din32
+    name: din32
+  - description: Dout1
+    name: dout1
+  - description: Dout2
+    name: dout2
+  - description: Dout3
+    name: dout3
+  - description: Dout4
+    name: dout4
+  - description: Dout5
+    name: dout5
+  - description: Dout6
+    name: dout6
+  - description: Dout7
+    name: dout7
+  - description: Dout8
+    name: dout8
+  - description: Dout9
+    name: dout9
+  - description: Dout10
+    name: dout10
+  - description: Dout11
+    name: dout11
+  - description: Dout12
+    name: dout12
+  - description: Dout13
+    name: dout13
+  - description: Dout14
+    name: dout14
+  - description: Dout15
+    name: dout15
+  - description: Dout16
+    name: dout16
+  - description: Dout17
+    name: dout17
+  - description: Dout18
+    name: dout18
+  - description: Dout19
+    name: dout19
+  - description: Dout20
+    name: dout20
+  - description: Dout21
+    name: dout21
+  - description: Dout22
+    name: dout22
+  - description: Dout23
+    name: dout23
+  - description: Dout24
+    name: dout24
+  - description: Dout25
+    name: dout25
+  - description: Dout26
+    name: dout26
+  - description: Dout27
+    name: dout27
+  - description: Dout28
+    name: dout28
+  - description: Dout29
+    name: dout29
+  - description: Dout30
+    name: dout30
+  - description: Dout31
+    name: dout31
+  - description: Dout32
+    name: dout32
+data_acq_device:
+  - adc_circuit: Intan
+    amplifier: Intan
+    system: SpikeGadgets
+    name: SpikeGadgets
+default_header_file_path: default_header.xml
+device:
+  name:
+    - Trodes
+electrode_groups:
+  - id: 0
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 1
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 2
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 3
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 4
+    location: CorpusCallosum
+    device_type: tetrode_12.5
+    description: tetrode_reference
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 5
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 6
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 7
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 8
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 9
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 10
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 11
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: -2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 12
+    location: NotInBrain
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 13
+    location: NotInBrain
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 14
+    location: NotInBrain
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 15
+    location: NotInBrain
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 16
+    location: NotInBrain
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 17
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: rightHC_CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 18
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 19
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 20
+    location: CorpusCallosum
+    device_type: tetrode_12.5
+    description: tetrode_reference
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 21
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 22
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 23
+    location: Hippocampus
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 2.8
+    targeted_y: -3.7
+    targeted_z: 0
+    units: mm
+  - id: 24
+    location: None
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 0
+    targeted_y: 0
+    targeted_z: 0
+    units: mm
+  - id: 25
+    location: None
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 0
+    targeted_y: 0
+    targeted_z: 0
+    units: mm
+  - id: 26
+    location: None
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 0
+    targeted_y: 0
+    targeted_z: 0
+    units: mm
+  - id: 27
+    location: None
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 0
+    targeted_y: 0
+    targeted_z: 0
+    units: mm
+  - id: 28
+    location: None
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 0
+    targeted_y: 0
+    targeted_z: 0
+    units: mm
+  - id: 29
+    location: None
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 0
+    targeted_y: 0
+    targeted_z: 0
+    units: mm
+  - id: 30
+    location: None
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 0
+    targeted_y: 0
+    targeted_z: 0
+    units: mm
+  - id: 31
+    location: None
+    device_type: tetrode_12.5
+    description: tetrode
+    targeted_location: CA1
+    targeted_x: 0
+    targeted_y: 0
+    targeted_z: 0
+    units: mm
+  - id: 32
+    location: mPFC
+    device_type: 128c-4s8mm6cm-20um-40um-sl
+    description: Probe
+    targeted_location: leftmPFC
+    targeted_x: -1
+    targeted_y: 3.2
+    targeted_z: -3.2
+    units: μm
+ntrode_electrode_group_channel_map:
+  - ntrode_id: 1
+    electrode_group_id: 0
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 2
+    electrode_group_id: 1
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 3
+    electrode_group_id: 2
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 4
+    electrode_group_id: 3
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 5
+    electrode_group_id: 4
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 6
+    electrode_group_id: 5
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 7
+    electrode_group_id: 6
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 8
+    electrode_group_id: 7
+    bad_channels:
+      - 1
+      - 3
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 9
+    electrode_group_id: 8
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 10
+    electrode_group_id: 9
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 11
+    electrode_group_id: 10
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 12
+    electrode_group_id: 11
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 13
+    electrode_group_id: 12
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 14
+    electrode_group_id: 13
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 15
+    electrode_group_id: 14
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 16
+    electrode_group_id: 15
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 17
+    electrode_group_id: 16
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 18
+    electrode_group_id: 17
+    bad_channels: 
+      - 3
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 19
+    electrode_group_id: 18
+    bad_channels: 
+      - 2
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 20
+    electrode_group_id: 19
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 21
+    electrode_group_id: 20
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 22
+    electrode_group_id: 21
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 23
+    electrode_group_id: 22
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 24
+    electrode_group_id: 23
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 25
+    electrode_group_id: 24
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 26
+    electrode_group_id: 25
+    bad_channels:
+      - 1
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 27
+    electrode_group_id: 26
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 28
+    electrode_group_id: 27
+    bad_channels: 
+      - 0
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 29
+    electrode_group_id: 28
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 30
+    electrode_group_id: 29
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 31
+    electrode_group_id: 30
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 32
+    electrode_group_id: 31
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+  - ntrode_id: 33
+    electrode_group_id: 32
+    bad_channels: []
+    map:
+      "0": 0
+      "1": 1
+      "2": 2
+      "3": 3
+      "4": 4
+      "5": 5
+      "6": 6
+      "7": 7
+      "8": 8
+      "9": 9
+      "10": 10
+      "11": 11
+      "12": 12
+      "13": 13
+      "14": 14
+      "15": 15
+      "16": 16
+      "17": 17
+      "18": 18
+      "19": 19
+      "20": 20
+      "21": 21
+      "22": 22
+      "23": 23
+      "24": 24
+      "25": 25
+      "26": 26
+      "27": 27
+      "28": 28
+      "29": 29
+      "30": 30
+      "31": 31
+  - ntrode_id: 34
+    electrode_group_id: 32
+    bad_channels: []
+    map:
+      "0": 32
+      "1": 33
+      "2": 34
+      "3": 35
+      "4": 36
+      "5": 37
+      "6": 38
+      "7": 39
+      "8": 40
+      "9": 41
+      "10": 42
+      "11": 43
+      "12": 44
+      "13": 45
+      "14": 46
+      "15": 47
+      "16": 48
+      "17": 49
+      "18": 50
+      "19": 51
+      "20": 52
+      "21": 53
+      "22": 54
+      "23": 55
+      "24": 56
+      "25": 57
+      "26": 58
+      "27": 59
+      "28": 60
+      "29": 61
+      "30": 62
+      "31": 63
+  - ntrode_id: 35
+    electrode_group_id: 32
+    bad_channels: []
+    map:
+      "0": 64
+      "1": 65
+      "2": 66
+      "3": 67
+      "4": 68
+      "5": 69
+      "6": 70
+      "7": 71
+      "8": 72
+      "9": 73
+      "10": 74
+      "11": 75
+      "12": 76
+      "13": 77
+      "14": 78
+      "15": 79
+      "16": 80
+      "17": 81
+      "18": 82
+      "19": 83
+      "20": 84
+      "21": 85
+      "22": 86
+      "23": 87
+      "24": 88
+      "25": 89
+      "26": 90
+      "27": 91
+      "28": 92
+      "29": 93
+      "30": 94
+      "31": 95
+  - ntrode_id: 36
+    electrode_group_id: 32
+    bad_channels: []
+    map:
+      "0": 96
+      "1": 97
+      "2": 98
+      "3": 99
+      "4": 100
+      "5": 101
+      "6": 102
+      "7": 103
+      "8": 104
+      "9": 105
+      "10": 106
+      "11": 107
+      "12": 108
+      "13": 109
+      "14": 110
+      "15": 111
+      "16": 112
+      "17": 113
+      "18": 114
+      "19": 115
+      "20": 116
+      "21": 117
+      "22": 118
+      "23": 119
+      "24": 120
+      "25": 121
+      "26": 122
+      "27": 123
+      "28": 124
+      "29": 125
+      "30": 126
+      "31": 127
+keywords:
+  - BS28
+
