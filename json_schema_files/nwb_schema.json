@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://lorenfranklab.github.io/rec_to_nwb_yaml_creator/v1.0.0",
+  "$id": "https://lorenfranklab.github.io/rec_to_nwb_yaml_creator/v1.0.1",
   "title": "Spikegadgets to NWB Validator",
   "type": "object",
   "description": "Spikegadgets to NWB Validator YAML schema version",
